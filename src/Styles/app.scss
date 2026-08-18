@@ -1,0 +1,150 @@
+/* ***** RESET CSS ***** */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+    border:0;
+    font-family:inherit;
+    margin:0;
+    outline:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+body {
+    color: #000;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+/* ***** RESET CSS ***** */
+
+.appContainer {
+    border: 2px solid #812ac1;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 40px 80px 80px 80px;
+    position: relative;
+    width: min(80%, 1000px);
+
+    .header {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #0f0fff;
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: 400;
+        margin: 0px 0px 80px 0px;
+    }
+
+    form > div {
+        border: 1px solid #812ac1;
+        padding: 20px 10px;
+        margin: 20px auto;
+        width: min(80%, 400px);
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+
+            span {
+                font-size: 1.2em;
+                font-weight: 100;
+                margin-right: 10px;
+            }
+
+            input {
+                border: 1px solid #812ac1;
+                font-size: 1.1em;
+                font-weight: bold;
+                padding: 3px 8px;
+            }
+        }
+
+        button {
+            background-color: #812ac1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-top: 20px;
+            padding: 3px 30px;
+        }
+    }
+
+    .userList {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin: 8px 0;
+
+            .userRow {
+                display: block;
+            }
+
+            .userLink {
+                font-size: 2.2em;
+                font-weight: bold;
+            }
+
+            .userBadge {
+                align-items: center;
+                border: 2px solid #812ac1;
+                border-radius: 50%;
+                display: inline-flex;
+                flex-shrink: 0;
+                height: 42px;
+                justify-content: center;
+                overflow: hidden;
+                width: 42px;
+
+                img {
+                    display: block;
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+                span {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    color: #1f2937;
+                    letter-spacing: 0.04em;
+                }
+            }
+
+            .userLink,
+            .userBadge {
+                margin-right: 10px;
+            }
+
+            ul {
+                display: none;
+                margin-left: 40px;
+            }
+        }
+
+        li.expanded {
+            > ul {
+                display: block;
+            }
+        }
+    }
+}
